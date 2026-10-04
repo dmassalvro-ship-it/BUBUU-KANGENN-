@@ -6,145 +6,124 @@
 <title>Buat BUBUUU 💗</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  overflow-x:hidden;
+  font-family:Georgia,"Times New Roman",serif;
+  background:linear-gradient(135deg,#12050b,#3b0b20,#16050d);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  font-family: Georgia, "Times New Roman", serif;
-  background: linear-gradient(135deg, #12050b, #3b0b20, #16050d);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card{
+  width:min(94%,680px);
+  margin:30px 0;
+  padding:28px 20px;
+  text-align:center;
+  border-radius:28px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+  box-shadow:0 20px 70px rgba(0,0,0,.5);
 }
 
-.hearts span {
-  position: fixed;
-  bottom: -30px;
-  font-size: 22px;
-  animation: naik linear infinite;
-  opacity: .7;
+h1{
+  font-size:40px;
+  color:#ffd9e6;
+  margin:5px 0;
 }
 
-@keyframes naik {
-  to {
-    transform: translateY(-110vh) rotate(360deg);
-    opacity: 0;
-  }
+.from{
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  letter-spacing:2px;
+  opacity:.8;
+  margin-bottom:25px;
 }
 
-.card {
-  width: min(92%, 650px);
-  margin: 35px 0;
-  padding: 34px 25px;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 28px;
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 20px 70px rgba(0,0,0,.45);
+.gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
 }
 
-h1 {
-  font-size: 42px;
-  margin: 5px 0 8px;
-  color: #ffd9e6;
+.gallery img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  border-radius:18px;
 }
 
-.from {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  opacity: .8;
-  margin-bottom: 25px;
+.message{
+  margin:28px 0;
+  text-align:left;
+  line-height:1.9;
+  font-size:18px;
+  white-space:pre-line;
 }
 
-.photo {
-  width: 100%;
-  height: 300px;
-  border-radius: 22px;
-  border: 1px dashed rgba(255,255,255,.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255,255,255,.05);
-  color: #dcb7c5;
-  font-family: Arial, sans-serif;
+.love{
+  font-size:24px;
+  line-height:1.8;
+  color:#ffd1df;
 }
 
-.message {
-  margin: 28px 0 20px;
-  text-align: left;
-  line-height: 1.9;
-  font-size: 18px;
-  white-space: pre-line;
+audio{
+  width:100%;
+  margin:20px 0;
 }
 
-.love {
-  font-size: 25px;
-  line-height: 1.8;
-  color: #ffd1df;
+button{
+  border:0;
+  border-radius:999px;
+  padding:13px 24px;
+  background:#ff6f9f;
+  color:white;
+  font-weight:bold;
+  font-size:15px;
 }
 
-button {
-  border: 0;
-  border-radius: 999px;
-  padding: 13px 23px;
-  margin: 8px;
-  background: #ff6f9f;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0 8px 25px rgba(255,80,140,.3);
-}
-
-audio {
-  margin-top: 15px;
-  width: 100%;
-}
-
-.footer {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  opacity: .55;
-  margin-top: 20px;
+.footer{
+  margin-top:20px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  opacity:.55;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hearts">
-  <span style="left:8%;animation-duration:8s">❤</span>
-  <span style="left:20%;animation-duration:11s">♡</span>
-  <span style="left:34%;animation-duration:9s">❤</span>
-  <span style="left:51%;animation-duration:13s">♡</span>
-  <span style="left:68%;animation-duration:10s">❤</span>
-  <span style="left:83%;animation-duration:12s">♡</span>
-  <span style="left:94%;animation-duration:9s">❤</span>
-</div>
-
 <main class="card">
 
-  <div style="font-size:35px">💌</div>
+<div style="font-size:35px">💌</div>
 
-  <h1>Buat BUBUUU 💗</h1>
+<h1>Buat BUBUUU 💗</h1>
 
-  <div class="from">
-    DARI DIMAS GANTENG
-  </div>
+<div class="from">
+DARI DIMAS GANTENG
+</div>
 
-  <div class="photo">
-    📸<br><br>
-    Foto Bubu nanti di sini ❤️
-  </div>
+<div class="gallery">
 
-  <div class="message">
+<img src="IMG-20260910-WA0018.jpg">
+<img src="IMG-20260916-WA0058.jpg">
+<img src="IMG-20260927-WA0044.jpg">
+<img src="IMG-20260928-WA0024.jpg">
+<img src="IMG-20261001-WA0005.jpg">
+<img src="IMG-20261001-WA0013.jpg">
+
+</div>
+
+<audio controls loop>
+<source src="1696462186064.mp3" type="audio/mpeg">
+</audio>
+
+<div class="message">
 Bubu, kita kapan ya ketemu?
 
 Aku kangen banget tau sama kamu.
@@ -165,62 +144,61 @@ Kapan ketemu?
 Aku kangen.
 
 Ya udah deh, pokoknya gitu. ❤️
-  </div>
+</div>
 
-  <div class="love">
-    Love you Bubu. ❤️<br>
-    Love you, love you, love you, love you. ❤️<br><br>
+<div class="love">
+Love you Bubu. ❤️<br>
+Love you, love you, love you, love you. ❤️<br><br>
 
-    Duniaku, cintaku, rumahku.<br>
-    Muah, muah, muah. 💋💋💋
-  </div>
+Duniaku, cintaku, rumahku.<br>
+Muah, muah, muah. 💋💋💋
+</div>
 
-  <button onclick="buatHati()">
-    💗 Buat Bubu
-  </button>
+<button onclick="buatHati()">
+💗 Buat Bubu
+</button>
 
-  <div class="footer">
-    Dibuat khusus untuk Bubu — dari Dimas Ganteng ❤️
-  </div>
+<div class="footer">
+Dibuat khusus untuk Bubu — dari Dimas Ganteng ❤️
+</div>
 
 </main>
 
 <script>
-function buatHati() {
+function buatHati(){
 
-  for (let i = 0; i < 20; i++) {
+for(let i=0;i<20;i++){
 
-    const hati = document.createElement("div");
+const hati=document.createElement("div");
 
-    hati.innerHTML = ["❤️","💗","💖","💕"][Math.floor(Math.random() * 4)];
+hati.innerHTML=["❤️","💗","💖","💕"][Math.floor(Math.random()*4)];
 
-    hati.style.position = "fixed";
-    hati.style.left = "50%";
-    hati.style.top = "60%";
-    hati.style.fontSize = (18 + Math.random() * 20) + "px";
-    hati.style.zIndex = "999";
-    hati.style.pointerEvents = "none";
-    hati.style.transition = "all 1.5s ease-out";
+hati.style.position="fixed";
+hati.style.left="50%";
+hati.style.top="60%";
+hati.style.fontSize=(18+Math.random()*20)+"px";
+hati.style.zIndex="999";
+hati.style.pointerEvents="none";
+hati.style.transition="all 1.5s ease-out";
 
-    document.body.appendChild(hati);
+document.body.appendChild(hati);
 
-    setTimeout(() => {
+setTimeout(()=>{
 
-      hati.style.transform =
-        "translate(" +
-        ((Math.random() - 0.5) * 500) +
-        "px," +
-        (-150 - Math.random() * 400) +
-        "px)";
+hati.style.transform=
+"translate("+
+((Math.random()-.5)*500)+
+"px,"+
+(-150-Math.random()*400)+
+"px)";
 
-      hati.style.opacity = "0";
+hati.style.opacity="0";
 
-    }, 50);
+},50);
 
-    setTimeout(() => {
-      hati.remove();
-    }, 1600);
-  }
+setTimeout(()=>hati.remove(),1600);
+
+}
 }
 </script>
 
