@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buat BUBUUU 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(135deg, #12050b, #3b0b20, #16050d);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hearts span {
+  position: fixed;
+  bottom: -30px;
+  font-size: 22px;
+  animation: naik linear infinite;
+  opacity: .7;
+}
+
+@keyframes naik {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.card {
+  width: min(92%, 650px);
+  margin: 35px 0;
+  padding: 34px 25px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 28px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 70px rgba(0,0,0,.45);
+}
+
+h1 {
+  font-size: 42px;
+  margin: 5px 0 8px;
+  color: #ffd9e6;
+}
+
+.from {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: .8;
+  margin-bottom: 25px;
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  border-radius: 22px;
+  border: 1px dashed rgba(255,255,255,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.05);
+  color: #dcb7c5;
+  font-family: Arial, sans-serif;
+}
+
+.message {
+  margin: 28px 0 20px;
+  text-align: left;
+  line-height: 1.9;
+  font-size: 18px;
+  white-space: pre-line;
+}
+
+.love {
+  font-size: 25px;
+  line-height: 1.8;
+  color: #ffd1df;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 23px;
+  margin: 8px;
+  background: #ff6f9f;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255,80,140,.3);
+}
+
+audio {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.footer {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: .55;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+  <span style="left:8%;animation-duration:8s">❤</span>
+  <span style="left:20%;animation-duration:11s">♡</span>
+  <span style="left:34%;animation-duration:9s">❤</span>
+  <span style="left:51%;animation-duration:13s">♡</span>
+  <span style="left:68%;animation-duration:10s">❤</span>
+  <span style="left:83%;animation-duration:12s">♡</span>
+  <span style="left:94%;animation-duration:9s">❤</span>
+</div>
+
+<main class="card">
+
+  <div style="font-size:35px">💌</div>
+
+  <h1>Buat BUBUUU 💗</h1>
+
+  <div class="from">
+    DARI DIMAS GANTENG
+  </div>
+
+  <div class="photo">
+    📸<br><br>
+    Foto Bubu nanti di sini ❤️
+  </div>
+
+  <div class="message">
+Bubu, kita kapan ya ketemu?
+
+Aku kangen banget tau sama kamu.
+Kamu emang nggak kangen sama aku?
+
+Padahal aku kalau ketemu kamu,
+aku mau peluk-peluk kamu,
+mau cium-cium kamu,
+mau usap-usapin kepala kamu. 🥺❤️
+
+Kita kapan sih nikah?
+Masih lama ya? Hehehe.
+
+Sabar ya Bubu.
+
+Tapi aku pengen ketemu sama kamu, ih.
+Kapan ketemu?
+Aku kangen.
+
+Ya udah deh, pokoknya gitu. ❤️
+  </div>
+
+  <div class="love">
+    Love you Bubu. ❤️<br>
+    Love you, love you, love you, love you. ❤️<br><br>
+
+    Duniaku, cintaku, rumahku.<br>
+    Muah, muah, muah. 💋💋💋
+  </div>
+
+  <button onclick="buatHati()">
+    💗 Buat Bubu
+  </button>
+
+  <div class="footer">
+    Dibuat khusus untuk Bubu — dari Dimas Ganteng ❤️
+  </div>
+
+</main>
+
+<script>
+function buatHati() {
+
+  for (let i = 0; i < 20; i++) {
+
+    const hati = document.createElement("div");
+
+    hati.innerHTML = ["❤️","💗","💖","💕"][Math.floor(Math.random() * 4)];
+
+    hati.style.position = "fixed";
+    hati.style.left = "50%";
+    hati.style.top = "60%";
+    hati.style.fontSize = (18 + Math.random() * 20) + "px";
+    hati.style.zIndex = "999";
+    hati.style.pointerEvents = "none";
+    hati.style.transition = "all 1.5s ease-out";
+
+    document.body.appendChild(hati);
+
+    setTimeout(() => {
+
+      hati.style.transform =
+        "translate(" +
+        ((Math.random() - 0.5) * 500) +
+        "px," +
+        (-150 - Math.random() * 400) +
+        "px)";
+
+      hati.style.opacity = "0";
+
+    }, 50);
+
+    setTimeout(() => {
+      hati.remove();
+    }, 1600);
+  }
+}
+</script>
+
+</body>
+</html>
